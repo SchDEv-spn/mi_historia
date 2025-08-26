@@ -1,16 +1,97 @@
+/* css/style.css */
+
+/* Tipografía moderna y colores suaves */
 body {
-    background-color: rgb(40, 55, 71);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor central */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Foto de perfil */
+section img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 4px solid #0077ff;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Títulos */
+h1 {
     text-align: center;
-    color: aliceblue;
-    padding: 50px;
-    box-sizing: border-box;
+    color: #0077ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-ul li{
+
+h2 {
+    margin-top: 30px;
+    color: #444;
+    border-left: 5px solid #0077ff;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+/* Párrafos */
+p {
+    text-align: justify;
+    margin: 10px 0 20px;
+    font-size: 1rem;
+}
+
+/* Lista de cualidades */
+ul {
     list-style: none;
+    padding: 0;
 }
-ul{
-    text-align: left;
+
+ul li {
+    background: #f0f4ff;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: 0.3s;
 }
-a{
-    color: rgb(0, 0, 0);
+
+ul li:hover {
+    background: #dbe9ff;
+    transform: translateX(5px);
+}
+
+/* Link GitHub */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #0077ff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #0056cc;
+}
+
+/* Separadores */
+hr {
+    border: none;
+    height: 2px;
+    background: #eee;
+    margin: 30px 0;
 }
